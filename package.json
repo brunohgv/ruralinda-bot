@@ -1,0 +1,17 @@
+{
+  "name": "ruralinda-bot",
+  "version": "1.0.0",
+  "description": "A discord bot to \"Computação Extra Curricular UFRPE\" group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "brunohgv <brunohgv2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0"
+  }
+}
