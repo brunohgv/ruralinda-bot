@@ -1,6 +1,8 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+const CONSTANTS = require('./common-info.json')
+
 require('dotenv').config()
 
 client.on('ready', () => {
@@ -8,8 +10,8 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!')
+  if (msg.content === '!sobre') {
+    msg.reply(`oi, eu sou a ${CONSTANTS.botName}!\nSaiba mais sobre mim em ${CONSTANTS.botRepo}. ;)`)
   }
 });
 
